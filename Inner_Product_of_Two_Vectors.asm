@@ -24,7 +24,7 @@ main:		# main program.
 		add	$a2, $v0, $zero		# a2 = b.address;
 		addi	$t0, $zero, 0		# t0 = 0;
 while1:
-		beq	$t0, $t4, while1End	# if (t0 == n) break; actually it is (4i == 4n)
+		beq	$t0, $t4, while1End	# if (t0 == n) break; // actually it is (4i == 4n)
 		la 	$a0, EnterAi
 		addi	$v0, $zero, 4		# print EnterAi
 		syscall
